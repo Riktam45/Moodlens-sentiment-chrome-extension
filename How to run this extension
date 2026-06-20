@@ -1,0 +1,189 @@
+# How To Run The Project
+
+## Step 1 — Clone Repository
+
+```bash
+git clone https://github.com/Riktam45/moodlens-sentiment-chrome-extension.git
+```
+
+---
+
+## Step 2 — Open Project Folder
+
+```bash
+cd moodlens-sentiment-chrome-extension
+```
+
+---
+
+# Backend Setup
+
+## Step 3 — Move to Backend Folder
+
+```bash
+cd backend-api
+```
+
+---
+
+## Step 4 — Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Step 5 — Run FastAPI Server
+
+```bash
+uvicorn main:app --reload
+```
+
+If successful, you will see:
+
+```text
+Uvicorn running on http://127.0.0.1:8000
+```
+
+Backend API will run on:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# Chrome Extension Setup
+
+## Step 6 — Open Chrome Extensions Page
+
+Open:
+
+```text
+chrome://extensions/
+```
+
+---
+
+## Step 7 — Enable Developer Mode
+
+Turn ON:
+
+```text
+Developer Mode
+```
+
+(top-right corner)
+
+---
+
+## Step 8 — Load Extension
+
+Click:
+
+```text
+Load unpacked
+```
+
+Select:
+
+```text
+frontend-extension
+```
+
+inside the project folder.
+
+---
+
+# Using The Extension
+
+## Step 9 — Open Social Media Post
+
+Currently supported:
+- YouTube
+- Reddit
+
+---
+
+## Step 10 — Open MoodLens Extension
+
+Paste:
+- YouTube post URL
+- Reddit post URL
+
+Click:
+
+```text
+Analyze Post
+```
+
+The extension will:
+1. Extract comments
+2. Analyze sentiments
+3. Display:
+   - Positive %
+   - Neutral %
+   - Negative %
+   - Total comments analyzed
+
+---
+
+# Manual Comment Analysis
+
+You can also manually test a comment by:
+
+1. Typing a comment
+2. Clicking:
+
+```text
+Analyze Comment
+```
+
+The extension will display:
+- Sentiment type
+- Confidence score
+
+---
+
+# Troubleshooting
+
+## Backend Not Starting
+
+Make sure Python is installed:
+
+```bash
+python --version
+```
+
+---
+
+## Extension Not Loading
+
+Check:
+- `manifest.json` exists
+- Developer Mode is ON
+- Correct folder selected
+
+---
+
+## API Connection Error
+
+Make sure backend is running on:
+
+```text
+http://127.0.0.1:8000
+```
+
+before opening the extension.
+
+---
+
+# Future Updates
+
+- Animated graphs
+- Live sentiment tracking
+- Twitter/X support
+- Instagram support
+- Facebook support
+- AI audience summaries

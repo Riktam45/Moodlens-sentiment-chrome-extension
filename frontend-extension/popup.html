@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodLens</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>MoodLens</h1>
+
+    <input type="text" id="postUrl" placeholder="Paste post URL">
+
+    <button id="analyzeBtn">Analyze Post</button>
+
+    <div class="manual-section">
+        <textarea id="manualComment" placeholder="Analyze single comment..."></textarea>
+        <button id="manualBtn">Analyze Comment</button>
+    </div>
+
+    <div id="loading" class="hidden">
+        Analyzing...
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

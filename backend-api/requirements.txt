@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+transformers
+tensorflow-cpu
+praw
+google-api-python-client
+python-dotenv
+requests
+beautifulsoup4
+pydantic
